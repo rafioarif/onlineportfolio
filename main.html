@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="home-icon">
+                <img src="home.png" alt="Home">
+            </a>
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#education"><li>Education</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+            <a href="javascript:void(0)" class="menu-icon" onclick="toggleDropdown()">
+                <img src="menu.png" alt="Menu">
+            </a>
+        </nav>
+        <div class="dropdown">
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#education"><li>Education</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="about" class="about-container">
+            <div class="about">
+                <section class="introduction">
+                    <a href="javascript:void(0)" onclick="toggleAboutContent()">
+                        <img src="introduction.png" alt="introduction" class="introduction-icon">
+                        <strong>INTRODUCTION</strong>
+                    </a>
+                    <aside id="about-content" class="about-content">
+                        <p>Hi, I'm Arif Hossain, a professional web developer with a passion for creating dynamic and responsive websites. I have experience in HTML, CSS, JavaScript, and various frameworks.</p>
+                        <p>My goal is to build user-friendly applications that provide an excellent user experience.</p>
+                        <p>Feel free to explore my portfolio and reach out if you have any questions or opportunities.</p>
+                        <p>Thank you for visiting!</p>
+                        <p>Best regards,</p>
+                        <p>Arif Hossain</p>
+                        <p>A Professional Web Developer</p>
+                    </aside>
+                </section>
+    
+                <section class="education">
+                    <a href="javascript:void(0)" onclick="toggleEducationContent()">
+                        <img src="education.png" alt="education" class="education-icon">
+                        <strong>EDUCATION</strong>
+                    </a>
+                    <aside id="education-content" class="education-content">
+                        <p>Master's in Computer Science</p>
+                        <p>Oxford University, 2022</p>
+                        <p>Bachelor's in Computing and Information System (CIS)</p>
+                        <p>Daffodil International University, 2020</p>
+                    </aside>
+                </section>
+    
+                <section class="skills">
+                    <a href="javascript:void(0)" onclick="toggleSkillContent()">
+                        <img src="skills.png" alt="skills" class="skills-icon">
+                        <strong>SKILLS</strong>
+                    </a>
+                    <aside class="skills-content" id="skills-content">
+                        <p>
+                            Over the years, I have honed a diverse set of skills that help me build impactful projects. 
+                            From **designing** to **developing** and **problem-solving**, here are some areas where I excel:
+                        </p>
+                    
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3>Technical Skills</h3>
+                                <ul>
+                                    <li>HTML, CSS, JavaScript</li>
+                                    <li>React, Vue.js, Angular</li>
+                                    <li>Node.js, Express.js, MongoDB</li>
+                                    <li>API Development & Integration</li>
+                                    <li>Responsive Web Design</li>
+                                </ul>
+                            </div>
+                    
+                            <div class="skill-category">
+                                <h3>Design & UI/UX</h3>
+                                <ul>
+                                    <li>Adobe Photoshop & Illustrator</li>
+                                    <li>Figma & Sketch</li>
+                                    <li>Wireframing & Prototyping</li>
+                                    <li>Typography & Color Theory</li>
+                                    <li>Mobile-First Design</li>
+                                </ul>
+                            </div>
+                    
+                            <div class="skill-category">
+                                <h3>Soft Skills</h3>
+                                <ul>
+                                    <li>Problem-Solving</li>
+                                    <li>Team Collaboration</li>
+                                    <li>Critical Thinking</li>
+                                    <li>Time Management</li>
+                                    <li>Adaptability & Learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+    
+                <section class="goals">
+                    <a href="javascript:void(0)" onclick="toggleGoalContent()">
+                        <img src="goals.png" alt="goals" class="goals-icon">
+                        <strong>GOALS</strong>
+                    </a>
+                    <aside id="goals-content" class="goals-content">
+                        <p>
+                            I believe that growth comes from constant learning, experimenting, and pushing boundaries. My journey is driven by a passion for innovation and the desire to create meaningful, impactful work. 
+                            In the short term, I aim to refine my skills, take on challenging projects, and collaborate with like-minded professionals to expand my expertise. 
+                        </p>
+                        <p>
+                            Looking ahead, my vision is to establish myself as an industry leader, working on projects that make a difference. 
+                            I aspire to contribute to open-source communities, mentor aspiring professionals, and possibly launch my own creative venture. 
+                            My ultimate goal is to blend creativity with technology to solve real-world problems and leave a lasting impact in my field.
+                        </p>
+                    </aside>
+                </section>
+    
+                <section class="passion">
+                    <a href="javascript:void(0)" onclick="togglePassionContent()">
+                        <img src="passion.png" alt="passion" class="passion-icon">
+                        <strong>PASSION</strong>
+                    </a>
+                    <aside class="passion-content" id="passion-content">
+                        <p>
+                            Creativity, problem-solving, and innovation drive everything I do. Ever since I started my journey in 
+                            <strong> Web Development</strong>, I’ve been fascinated by the power of 
+                            <strong>Design and Technology</strong> to shape experiences and connect with people.  
+                        </p>
+                        <p>
+                            Whether it’s crafting intuitive user interfaces, writing clean and efficient code, or bringing ideas to life through 
+                            <strong>Design</strong>, I find joy in the process of creation.  
+                            My passion lies in continuously learning, experimenting, and refining my skills to create work that is not just functional 
+                            but also meaningful and impactful.
+                        </p>
+                        <p>
+                            Every project I take on is an opportunity to grow, challenge myself, and make a difference. My goal is to blend my creativity 
+                            with technology to build solutions that inspire, engage, and elevate user experiences. 
+                        </p>
+                    </aside>
+                </section>
+            </div>
+            
+        </div>
+
+
+        <div id="skills" class="skill-section">
+            <div class="skill-header">
+                <h3>Skills I Have Gathered...</h3>
+                <p>I specialize in web development with expertise in HTML, CSS, JavaScript, React.js, and Node.js. I work with Git, 
+                    APIs, and databases to build efficient and scalable applications. 
+                    With a passion for UI/UX design, I use Figma and Adobe Photoshop to create intuitive user experiences.
+                     Always learning, I stay updated with the latest technologies to craft innovative solutions. </p>
+            </div>
+            <div class="skill-container">
+                <div class="skill">
+                    <img src="html.png" alt="HTML5">
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <img src="css.png" alt="CSS3">
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <img src="js.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <img src="react.png" alt="React">
+                    <h3>React.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <img src="node.png" alt="Node.js">
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <img src="git.png" alt="Git">
+                    <h3>Git & GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="projects" class="projects">
+            <h2>My Projects</h2>
+            <p>Here are some of my recent works that showcase my skills and creativity.</p>
+
+            <div class="project-container">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>E-Commerce Web Page</h3>
+                    <p>A feature-rich e-commerce platform developed using React.js, Firebase, and Stripe API. 
+                        It includes a shopping cart, user authentication, and a secure payment gateway.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript. 
+                        It includes smooth animations, a dark/light mode, and a dynamic project showcase.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 2">
+                    <h3>Blog CMS</h3>
+                    <p>A custom content management system (CMS) for bloggers, developed with Django and PostgreSQL. 
+                        It allows users to write, edit, and publish articles with SEO optimization.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project4.jpg" alt="Project 2">
+                    <h3>Task Manager App</h3>
+                    <p>A productivity tool built with Node.js, Express, and MongoDB that allows users to create, manage, and track daily tasks. 
+                        It features user authentication and a drag-and-drop interface.</p>
+                </div>
+            </div>
+        </div>
+        <div id="education" class="education-container">
+            <h2>🎓 Education</h2>
+            <p>My academic background and the knowledge I've gained along the way.</p>
+
+            <div class="education-item">
+                <h3>🎓 Master's - OxfordUnoversity</h3>
+                <p>2022 | Information Technology</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Cyber Security</h3>
+                <p>F-Secure - University of Helsinki, 2021</p>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="form-container">
+                <h2>Contact Me</h2>
+                <p>
+                    <span>HERE I AM</span>
+                </p>
+                <div class="form-box">
+                    <form action="">
+                        <div class="info">
+                            <div class="form">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="user-message">
+                            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="send">
+                            <button class="send-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="icon">
+            <img src="fb.png" alt="">
+            <img src="linkd.png" alt="">
+            <img src="pin.png" alt="">
+            <img src="what.png" alt="">
+            <img src="ins.png" alt="">
+        </div>
+        <div class="copy">
+            <p>&copy; 2025 Arif Hossain. All Rights Reserved.</p>
+        </div>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

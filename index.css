@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px; 
+    line-height: 1.5; 
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    background-color: #f9f9f9; 
+}
+
+.home{
+    background-image: url(rafi.jpg);   
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container{
+    text-align: center;
+    color: white;
+    margin-top: 40vh;
+}
+
+.home h1{
+    font-size: 4rem;
+    margin: 2rem;
+    color: #fff;
+    opacity: 0; 
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate, fadeInUp 0.5s ease-out 0.4s forwards;
+}
+
+.home-container h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0; 
+    transform: translateY(30px); 
+    animation: fadeInUp 0.5s ease-out 0.5s forwards; 
+}
+
+.home-container p{
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    opacity: 0; 
+    transform: translateY(30px); 
+    animation: fadeInUp 0.5s ease-out 0.8s forwards; 
+}
+
+.home-container hr {
+    opacity: 0; 
+    border: none; 
+    height: 4px;
+    margin-bottom: 2rem;
+    transform: translateY(30px); 
+    background: #ff005e; 
+    box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: neonLine 1.5s infinite alternate, fadeInUp 0.5s ease-out 1s forwards; 
+}
+
+/* Default styles for larger screens */
+.home-container button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #ff005e;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out 1.2s forwards;
+}
+
+.home-container button:hover{
+    background-color: #00d4ff;
+    box-shadow: 0 0 10px 10px #10505c;
+
+}
+
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem; 
+    }
+
+    .home-container h3 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .home-container button {
+        padding: 0.8rem 1.5rem; 
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 2rem; 
+    }
+
+    .home-container h3 {
+        font-size: 1.5rem; 
+    }
+
+    .home-container p {
+        font-size: 0.9rem; 
+    }
+
+    .home-container button {
+        padding: 0.6rem 1rem;
+        font-size: 1rem; 
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes neonLine {
+    0% {
+        box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
